@@ -7,12 +7,14 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    host: '0.0.0.0',
     proxy: {
       '/api': {
-        target: 'https://python-test-backend-iwv9.onrender.com',
+        target: process.env.REACT_APP_API_URL,
         changeOrigin: true,
         secure: false,
       },
     },
-  },
+  }
+  
 });

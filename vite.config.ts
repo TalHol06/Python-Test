@@ -14,7 +14,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'https://python-test-backend-iwv9.onrender.com',
+        target: process.env.REACT_APP_API_URL,
         secure: false,
         changeOrigin: true
       }
