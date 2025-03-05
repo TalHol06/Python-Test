@@ -14,7 +14,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://python-test-backend-iwv9.onrender.com',
         secure: false,
         changeOrigin: true
       }

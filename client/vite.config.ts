@@ -9,7 +9,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://python-test-backend-iwv9.onrender.com',
         changeOrigin: true,
         secure: false,
       },
