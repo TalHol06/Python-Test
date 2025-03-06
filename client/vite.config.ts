@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-    host: '0.0.0.0',
+    // host: '0.0.0.0',
     proxy: {
       '/api': {
         target: process.env.VITE_API_URL || 'http://localhost:3001',
@@ -19,11 +19,11 @@ export default defineConfig({
         secure: false,
       },
     },
-    allowedHosts: [
-      'python-test-frontend.onrender.com',
-      'localhost',
-      '.onrender.com',
-    ],
+    // allowedHosts: [
+    //   'python-test-frontend.onrender.com',
+    //   'localhost',
+    //   '.onrender.com',
+    // ],
   }
   
 });
