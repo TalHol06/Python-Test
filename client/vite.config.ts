@@ -15,6 +15,11 @@ export default defineConfig({
         secure: false,
       },
     },
+    allowedHosts: [
+      'python-test-frontend.onrender.com',
+      'localhost',
+      '.onrender.com',
+    ],
   }
   
 });
