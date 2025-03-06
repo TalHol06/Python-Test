@@ -29,5 +29,5 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(routes);
 
 db.once('open', () => {
-  app.listen(port, '0.0.0.0', () => console.log(`🌍 Now listening on localhost:${port}`));
+  app.listen(port, () => console.log(`🌍 Now listening on localhost:${port}`));
 });
