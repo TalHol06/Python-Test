@@ -1,5 +1,4 @@
 import express from 'express';
-import path from 'path';
 import db from './config/connection.js';
 import routes from './routes/index.js';
 
@@ -15,7 +14,7 @@ app.use(routes);
 if (process.env.NODE_ENV === 'production'){
   app.use(express.static((`../client/dist`)));
   // console.log(__dirname);
-  app.get("*", (req, res) => {
+  app.get("*", (_req, res) => {
     res.sendFile(`../client/dist/index.html`)
   })
 }
