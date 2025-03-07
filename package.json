@@ -16,15 +16,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "concurrently": "^8.2.0",
     "cypress": "^13.13.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "ts-node": "^10.9.2"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
+    "serve": "^14.2.4",
+    "ts-node": "^10.9.2",
     "vitest": "^2.0.3"
   }
 }
